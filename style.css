@@ -1,0 +1,67 @@
+body { background-color: skyblue; display: flex; justify-content: center;min-height: 100vh; flex-direction: column;}
+
+
+
+.sun {
+    height: 300px;
+    width: 300px;
+    background-color: purple;
+border-radius: 100%;
+margin: 5%;}
+
+* { 
+    margin: 2.5px;
+    padding: 2.5px;
+    box-sizing: border-box;
+}
+
+.gallery {display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+width: 80%;
+height: 400px;
+margin-bottom: 20px;}
+
+.circle {
+    width:150px; 
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid darkblue;
+    z-index: 3;
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: chartreuse;
+    z-index: 2;
+}
+
+/* Responsive Design below */
+@media (min-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        background-color: orange;
+    }
+}
+
+.contact-form { 
+    display: flex ;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+}
+input, button {
+    padding:7.5px;
+    font-size: 18px;
+}
+
+h1 {font-family: Arial, Helvetica, sans-serif; font-size: 36pt; justify-content: center;          
+}
